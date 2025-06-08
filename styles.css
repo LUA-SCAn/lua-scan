@@ -68,7 +68,7 @@ header {
     background-color: var(--primeira-cor);
 }
 .menu-lateral ul li > p {
-    display: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .menu-lateral ul li:hover > p {
     display: block;
