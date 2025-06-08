@@ -1,0 +1,159 @@
+:root {
+    --primeira-cor: #3498db;
+    --segunda-cor: #2980b9;
+    --texto: #ecf0f1;
+    --texto-segudacor: #000f1f;
+    --background-color: #34495e;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--texto);
+    transition: background-color 0.5 ease;
+}
+header {
+        display: flex;
+        align-items: center;
+        background-color: silver;
+       }
+       h1 {
+        margin-left: 100px;
+       }
+       header img {
+        background-color: silver;
+       }
+
+.menu-lateral {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: silver;
+    z-index: 5;
+    box-shadow: 0 0 20px rgba(0, 0, 0.1);
+    transition: all 0.5 ease;
+}
+
+.menu-lateral.ativo {
+    left: 0%;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0%;
+    margin-top: 60px 0 0 0;
+}
+
+.menu-lateral ul li {
+    padding: 15px 15px;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: var(--texto);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-lateral ul li a i {
+    font-size: 24px;
+}
+
+.menu-lateral ul li:hover {
+    background-color: var(--primeira-cor);
+}
+.menu-lateral ul li > p {
+    display: none;
+}
+.menu-lateral ul li:hover > p {
+    display: block;
+}
+
+.botao-menu {
+    background-color: var(--primeira-cor);
+    position: fixed;
+    z-index: 6;
+    border-radius: 5px;
+    font-size: 24px;
+    border: none
+    
+    
+}
+
+.botao-menu:hover {
+    background-color: var(--texto)
+}
+
+.botao-menu.ativo {
+    left: 320px;
+}
+
+.conteudo h2 {
+    border: #000f1f;
+    
+}
+
+.conteudo ul li {
+    display: inline-block;
+    margin: 10px;
+    
+}
+
+.backgroud {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+}
+
+.backgroud.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 img {
+    position: left;
+    border: none;
+    display: block;
+    margin: auto;
+}
+
+/*0div > li  h1 {
+    display: none;
+    width: 300px;
+    height: 300px;
+    
+}
+div > li  p {
+    display: none;
+}
+div > li {
+    height: 300px;
+    width: 300px;
+}
+div:hover > li h1 {
+    display: block;
+    color: aqua;
+    background-color: black;
+    height: 300px;
+    width: 300px;
+}*/
+
+
+
+
+
