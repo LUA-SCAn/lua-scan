@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>prólogo</title>
-    <style>
+        <style>
         div {
             display: block;
             unicode-bidi: isolate;
+            border-radius: 10px;
         }
         div p {
             font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +23,8 @@
 
         }
         header img {
-            margin-left: 300px;
+            display: block;
+            margin: auto;
         }
         nav {
             right: 100px;
@@ -34,6 +36,24 @@
             font-weight: bolder;
             margin-right: 30px;
         }
+        .cor.ativo{
+        background-color: black;
+        }
+        .cor.ativo p{
+            color: white;
+        }
+
+        .mudarcor {
+        border-radius: 10px;
+        font-size: 12px;
+        height: 50px;
+        margin-left: 890px;
+        margin-bottom: 50px;
+        }
+        .mudarcor:hover {
+        background-color: rgb(40, 40, 170);
+        }
+
     </style>
 </head>
 <body>
@@ -47,7 +67,10 @@
             <a href="#"></a>
         </nav>
     </header>
-        <div>
+    <button class="mudarcor">
+                <img src="img/lua2.png" height="50" width="50" alt="">
+            </button>
+        <div class="cor">
             <p>"Torça... se você quiser me matar."</p>
             
             <p>A espada que perfurou o coração do homem tremeu. Ao se aproximar do fim de sua vida, o homem arrogantemente exigiu sua própria morte.</p>
@@ -420,6 +443,17 @@
             
             <p>Não me lembro de nada depois disso.</p>
         </div>
+<script>
+            
+const botao = document.querySelector('.mudarcor')
+const menulateral = document.querySelector('.cor')
+
+
+botao.addEventListener('click', () => {
+    menulateral.classList.toggle('ativo')
+    botao.classList.toggle('ativo')
+})
+</script>
     
 </body>
 </html>

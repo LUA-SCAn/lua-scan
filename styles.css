@@ -72,6 +72,8 @@ header {
 }
 .menu-lateral ul li:hover > p {
     display: block;
+    background-color: black;
+    color: white;
 }
 
 .botao-menu {
@@ -132,26 +134,9 @@ h1 img {
     margin: auto;
 }
 
-/*0div > li  h1 {
-    display: none;
-    width: 300px;
-    height: 300px;
-    
-}
-div > li  p {
+.menu-lateral ul li p {
     display: none;
 }
-div > li {
-    height: 300px;
-    width: 300px;
-}
-div:hover > li h1 {
-    display: block;
-    color: aqua;
-    background-color: black;
-    height: 300px;
-    width: 300px;
-}*/
 
 
 

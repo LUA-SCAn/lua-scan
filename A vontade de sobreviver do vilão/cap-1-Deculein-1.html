@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deculein 1</title>
-     <style>
+    <title>A VONTADE DE UM VILÃO DE SOBREVIVER capitulo 1 Deculein 1</title>
+         <style>
         div {
             display: block;
             unicode-bidi: isolate;
+            border-radius: 10px;
         }
         div p {
             font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +23,8 @@
 
         }
         header img {
-            margin-left: 300px;
+            display: block;
+            margin: auto;
         }
         nav {
             right: 100px;
@@ -34,6 +36,24 @@
             font-weight: bolder;
             margin-right: 30px;
         }
+        .cor.ativo{
+        background-color: black;
+        }
+        .cor.ativo p{
+            color: white;
+        }
+
+        .mudarcor {
+        border-radius: 10px;
+        font-size: 12px;
+        height: 50px;
+        margin-left: 890px;
+        margin-bottom: 50px;
+        }
+        .mudarcor:hover {
+        background-color: rgb(40, 40, 170);
+        }
+
     </style>
 </head>
 <body>
@@ -42,12 +62,15 @@
         <h1>A VONTADE DE UM VILÃO DE SOBREVIVER</h1>
         <h2>Capitulo 1 Deculein</h2>
         <nav>
+            <a href="prologo.html">anterior</a>
             <a href="capitulos.html">capitulos</a>
             <a href="cap-2-Deculein-2.html">procimo</a>
-            <a href="prologo.html">anterior</a>
         </nav>
     </header>
-    <div>
+    <button class="mudarcor">
+                <img src="img/lua2.png" height="50" width="50" alt="">
+            </button>
+    <div class="cor">
         <p>"É silencioso, então é confortável, mas...... isso não faz você se sentir ansioso?"</p>
 
 <p>Recentemente, a atmosfera ao redor da mansão Yukline se acalmou. O silêncio era bastante incomum nesta magnífica mansão que é considerada a melhor do mundo.</p>
@@ -435,6 +458,17 @@
 
 <p>Tudo o que se refletia nos meus olhos, que agora era mais real do que 3D...... foi o resultado do meu projeto.</p>
     </div>
+<script>
+            
+const botao = document.querySelector('.mudarcor')
+const menulateral = document.querySelector('.cor')
+
+
+botao.addEventListener('click', () => {
+    menulateral.classList.toggle('ativo')
+    botao.classList.toggle('ativo')
+})
+</script>
     
 </body>
 </html>
