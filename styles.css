@@ -77,7 +77,6 @@ header {
 }
 
 .botao-menu {
-    background-color: var(--primeira-cor);
     position: fixed;
     z-index: 6;
     border-radius: 5px;
@@ -88,19 +87,19 @@ header {
 }
 
 .botao-menu:hover {
-    background-color: var(--texto)
+    background-color: var(--primeira-cor)
 }
 
 .botao-menu.ativo {
     left: 320px;
 }
 
-.conteudo h2 {
+#contentToSearch h2 {
     border: #000f1f;
     
 }
 
-.conteudo ul li {
+#contentToSearch ul li {
     display: inline-block;
     margin: 10px;
     
@@ -138,7 +137,9 @@ h1 img {
     display: none;
 }
 
-
+.menu-lateral ul nav {
+   padding: 15px 15px;
+}
 
 
 

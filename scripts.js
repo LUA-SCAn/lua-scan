@@ -25,14 +25,18 @@ function filterContent() {
     const filter = input.value.toLowerCase();
     const content = document.getElementById('contentToSearch');
     const paragraphs = content.getElementsByTagName('p');
+    const image = content.getElementsByTagName('img');
 
     for (let i = 0; i < paragraphs.length; i++) {
         let textValue = paragraphs[i].textContent || paragraphs[i].innerText;
         if (textValue.toLowerCase().indexOf(filter) > -1) {
             paragraphs[i].style.display = "";
+            image[i].style.display = "";
             
         } else {
             paragraphs[i].style.display = "none";
+            image[i].style.display = "none";
+            
         }
     }
 }
