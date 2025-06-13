@@ -12,11 +12,15 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--texto);
     transition: background-color 0.5 ease;
+    max-width: 100%;
+    height: auto;
 }
 header {
         display: flex;
         align-items: center;
         background-color: silver;
+        max-width: 100%;
+        height: auto;
        }
        h1 {
         margin-left: 100px;
@@ -96,13 +100,16 @@ header {
 
 #contentToSearch h2 {
     border: #000f1f;
+    max-width: 100%;
+    height: auto;
     
 }
 
 #contentToSearch ul li {
     display: inline-block;
     margin: 10px;
-    
+    max-width: 100%;
+    height: auto;
 }
 
 .backgroud {
@@ -124,6 +131,8 @@ header {
 h1 {
     text-align: center;
     text-transform: uppercase;
+    max-width: 100%;
+    height: auto;
 }
 
 h1 img {
@@ -131,6 +140,8 @@ h1 img {
     border: none;
     display: block;
     margin: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .menu-lateral ul li p {
@@ -139,6 +150,8 @@ h1 img {
 
 .menu-lateral ul nav {
    padding: 15px 15px;
+   max-width: 100%;
+   height: auto;
 }
 
 
