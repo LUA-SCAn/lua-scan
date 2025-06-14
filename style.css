@@ -1,0 +1,53 @@
+ div {
+    display: block;
+    border-radius: 10px;
+    margin: auto;
+    unicode-bidi: isolate;;
+        }
+    div p {
+        font-family: "Arial", sans-serif;
+        line-height: 160%;
+        color: #2B2B2B;
+        font-size: 18px;
+        text-align: left;
+        word-break: break-word;
+
+        }
+        header {
+            background-color: silver;
+            margin-bottom: 60px;
+            text-align: center;
+
+        }
+        header img {
+            display: block;
+            margin: auto;
+        }
+        nav {
+            right: 100px;
+            padding: 10px;
+            background-color: rgba(5, 3, 3, 0.74);
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(9, 83, 243);
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+        .cor.ativo{
+        background-color: black;
+        }
+        .cor.ativo p{
+            color: white;
+        }
+
+        .mudarcor {
+        border: none;
+        border-radius: 10px;
+        height: 50px;
+        float: right;
+        margin-top: 120px; 
+        }
+        .mudarcor:hover {
+        background-color: rgb(40, 40, 170);
+        }
