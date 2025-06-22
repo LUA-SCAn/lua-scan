@@ -5,7 +5,14 @@
     --texto-segudacor: #000f1f;
     --background-color: #34495e;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
+    
         display: flex;
         align-items: center;
         background-color: silver;
@@ -145,14 +152,17 @@ h1 img {
 }
 
 #searchInput{
-    padding: 10px;
+   
     border: 1px solid var(--segunda-cor);
     border-radius: 5px;
     font-size: 16px;
     box-sizing: border-box;
-    
-    max-width: 100%;
+    margin: 10px;
     height: auto;
+    float: right;
 }
 
 
+@media screen and (max-width: 1000px){
+    
+}

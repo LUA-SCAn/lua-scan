@@ -26,17 +26,19 @@ function filterContent() {
     const content = document.getElementById('contentToSearch');
     const paragraphs = content.getElementsByTagName('p');
     const image = content.getElementsByTagName('img');
+    const title = content.getElementsByTagName('h2');
 
     for (let i = 0; i < paragraphs.length; i++) {
         let textValue = paragraphs[i].textContent || paragraphs[i].innerText;
         if (textValue.toLowerCase().indexOf(filter) > -1) {
             paragraphs[i].style.display = "";
             image[i].style.display = "";
+            title[i].style.display = "";
             
         } else {
             paragraphs[i].style.display = "none";
             image[i].style.display = "none";
-            
+            title[i].style.display = "none";
         }
     }
 }
